@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:07:12 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/11 09:34:53 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:14:04 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ static int	ft_isspace(char c)
 		return (0);
 }
 
-int	ft_atoi(char const *str)
+int			ft_atoi(char const *str)
 {
-	int i;
-	int r;
-	int s;
+	int	i;
+	int	r;
+	int	s;
 
 	if (!str)
 		return (0);

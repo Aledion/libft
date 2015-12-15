@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:29:58 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:54:32 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:18:52 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*ret;
 
 	if ((s1) && (s2))

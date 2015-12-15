@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:37:07 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/11 10:13:43 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:14:42 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ void	*ft_memalloc(size_t size)
 		ft_bzero(ret, size);
 		return (ret);
 	}
-	retunr (NULL);
+	return (NULL);
 }

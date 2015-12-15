@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:07:51 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/11 09:59:12 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:16:52 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,9 @@ static char	*ft_remp(int a, int s, int size, int n)
 
 char		*ft_itoa(int n)
 {
-	int size;
-	int a;
-	int s;
+	int		size;
+	int		a;
+	int		s;
 	char	*ex;
 
 	size = 1;

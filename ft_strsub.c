@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:32:47 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 11:38:46 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:21:07 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
-	char	*ret;
+	char			*ret;
 
 	if (s)
 		if ((ret = (char *)malloc(sizeof(*ret) * (len + 1))))

@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:25:04 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 10:47:27 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:19:17 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned char	i;
-	char	*ret;
+	char			*ret;
 
 	if (s)
 	{

@@ -6,13 +6,13 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:21:50 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 11:06:38 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:20:55 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnstr(char const *s1, char const *s2, size_t n)
+char	*ft_strnstr(char const *s1, char const *s2, size_t n)
 {
 	size_t	i;
 	size_t	j;

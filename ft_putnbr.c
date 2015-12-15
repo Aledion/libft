@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:06:02 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:10:23 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:17:58 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	ft_len(int *size, int nb)
 	}
 }
 
-void	ft_putnbr(int nb)
+void		ft_putnbr(int nb)
 {
 	int	size;
 
@@ -31,8 +31,8 @@ void	ft_putnbr(int nb)
 	{
 		if (nb < 0)
 		{
-		ft_putchar('-');
-		nb = -nb;
+			ft_putchar('-');
+			nb = -nb;
 		}
 		ft_len(&size, nb);
 		while (size >= 1)

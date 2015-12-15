@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:38:04 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/11 10:33:34 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:15:55 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(void const *s1, void const *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*t1;
 	unsigned char	*t2;
 

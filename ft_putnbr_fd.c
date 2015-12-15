@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:06:36 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:23:00 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:17:18 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static void	ft_len(int *size, int nb)
 	}
 }
 
-void	ft_putnbr_fd(int nb, int fd)
+void		ft_putnbr_fd(int nb, int fd)
 {
 	int	size;
 
