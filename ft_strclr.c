@@ -6,13 +6,13 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:27:32 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:31:58 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 09:55:38 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_stclr(char *str)
+void	ft_strclr(char *str)
 {
 	int	i;
 

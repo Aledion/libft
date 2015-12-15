@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:21:50 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/15 09:20:55 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 11:16:24 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,25 @@ char	*ft_strnstr(char const *s1, char const *s2, size_t n)
 	size_t	j;
 	size_t	s;
 
-	if ((!s1) || (!s2))
-		return (NULL);
-	s = ft_strlen((char *)s2);
 	i = 0;
 	j = 0;
 	if (s2[j] == 0)
-		return ((char *)&s1[i]);
-	while ((s1[i] != 0) && (i <= n) && (n >= s))
+		return ((char *)s1);
+	while (s1[i])
 	{
-		if ((s1[i] == s2[i]) && (ft_strncmp(&s1[i], &s2[j], s) == 0))
-			return ((char *)&s1[i]);
+		if (s1[i] == s2[j])
+		{
+			s = i;
+			while ((s1[i] == s2[j]) && (n--))
+			{
+				i++;
+				j++;
+			}
+			if ((s2[j] == 0) || (n == 0))
+				return ((char *)&s1[s]);
+			i = s;
+			j = 0;
+		}
 		i++;
 	}
 	return (NULL);

@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:13:34 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/15 09:26:19 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 10:29:49 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strncat(char *s1, char const *s2, size_t n)
 	size_t	i;
 	size_t	j;
 
-	if ((!s1) || (!s2))
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (s1[i] != 0)

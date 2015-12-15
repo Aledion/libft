@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:25:56 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:29:39 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 10:34:38 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ char	*ft_strchr(char const *s, int c)
 {
 	int	i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	while (s[i] != 0)
 	{
@@ -25,5 +23,7 @@ char	*ft_strchr(char const *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
+	if (s[i] == c)
+		return ((char *)&s[i]);
 	return (NULL);
 }

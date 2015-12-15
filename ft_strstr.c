@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:21:07 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 11:34:27 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 11:29:03 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strstr(char const *s1, char const *s2)
 	int	j;
 	int	s;
 
-	if ((!s1) || (!s2))
-		return (NULL);
 	i = 0;
 	j = 0;
 	if (s2[j] == 0)

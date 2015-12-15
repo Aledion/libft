@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:48:56 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/15 09:15:14 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 10:26:10 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memccpy(void *dst, void const *src, int c, size_t n)
 	unsigned char	*tdst;
 	unsigned char	*tsrc;
 
-	if ((!dst) || (!src))
-		return (NULL);
 	i = 0;
 	tdst = (unsigned char *)dst;
 	tsrc = (unsigned char *)src;

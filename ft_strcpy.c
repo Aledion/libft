@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:15:34 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:37:03 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 10:28:34 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ char	*ft_strcpy(char *dst, char const *src)
 {
 	int	i;
 
-	if ((!dst) || (!src))
-		return (NULL);
 	i = 0;
 	while (src[i] != 0)
 	{

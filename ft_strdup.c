@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:29:23 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/15 09:18:34 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/15 10:28:18 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strdup(char const *s1)
 	int		i;
 	char	*ret;
 
-	if (!s1)
-		return (NULL);
 	if ((ret = (char *)malloc(sizeof(*ret) * (ft_strlen(s1) + 1))))
 	{
 		i = 0;
