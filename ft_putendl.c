@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:04:44 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:00:20 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/16 08:21:15 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_putendl(char const *str)
 {
-	ft_putstr(str);
-	ft_putchar('\n');
+	if (str)
+	{
+		ft_putstr(str);
+		ft_putchar('\n');
+	}
 }

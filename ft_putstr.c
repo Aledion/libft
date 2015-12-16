@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 09:58:44 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:24:14 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/16 08:20:52 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,10 @@ void	ft_putstr(char const *str)
 {
 	int	i;
 
-	i = 0;
-	while (str[i] != 0)
-		ft_putchar(str[i++]);
+	if (str)
+	{
+		i = 0;
+		while (str[i] != 0)
+			ft_putchar(str[i++]);
+	}
 }

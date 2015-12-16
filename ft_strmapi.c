@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:25:04 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/15 09:19:17 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/16 08:17:40 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (s)
 	{
 		i = 0;
-		ret = (char *)malloc(sizeof(*ret) * (ft_strlen(s) + 1));
-		while (s[i] != 0)
+		if ((ret = (char *)malloc(sizeof(*ret) * (ft_strlen(s) + 1))))
 		{
-			ret[i] = f(i, s[i]);
-			i++;
+			while (s[i] != 0)
+			{
+				ret[i] = f(i, s[i]);
+				i++;
+			}
+			ret[i] = 0;
+			return (ret);
 		}
-		ret[i] = 0;
-		return (ret);
 	}
 	return (NULL);
 }
