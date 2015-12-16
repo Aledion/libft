@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/11 10:02:52 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/11 10:04:04 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/16 13:10:50 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	if (lst)
-		while (lst)
-		{
-			f(lst);
-			lst = lst->next;
-		}
+	while (lst)
+	{
+		f(lst);
+		lst = lst->next;
+	}
 }
