@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/16 10:58:31 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/16 12:45:23 by aroche           ###   ########.fr       */
+/*   Updated: 2015/12/17 09:37:52 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,3 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 		ft_lstdel(&((*alst)->next), del);
 	ft_lstdelone(alst, del);
 }
-
