@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:17:58 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/14 09:45:22 by aroche           ###   ########.fr       */
+/*   Updated: 2016/02/11 15:46:38 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,9 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
-	int	i;
-
-	if ((s1) && (s2))
-	{
-		i = 0;
-		while (s1[i] != 0)
-		{
-			if (s1[i] != s2[i])
-				return (0);
-			i++;
-		}
-		if (s1[i] == s2[i])
-			return (1);
-	}
-	return (0);
+	if ((!s1) && (!s2))
+		return (1);
+	if ((!s1) || (!s2))
+		return (0);
+	return (!ft_strcmp(s1, s2));
 }

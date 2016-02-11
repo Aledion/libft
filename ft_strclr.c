@@ -6,20 +6,17 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:27:32 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/15 09:55:38 by aroche           ###   ########.fr       */
+/*   Updated: 2016/02/11 15:35:52 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strclr(char *str)
+void	ft_strclr(char *s)
 {
-	int	i;
-
-	if (str)
+	while ((s) && (*s))
 	{
-		i = 0;
-		while (str[i] != 0)
-			str[i++] = 0;
+		*s = 0;
+		s++;
 	}
 }
