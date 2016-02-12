@@ -6,7 +6,7 @@
 #    By: aroche <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/15 09:04:28 by aroche            #+#    #+#              #
-#    Updated: 2016/02/04 20:32:52 by aroche           ###   ########.fr        #
+#    Updated: 2016/02/12 15:11:44 by aroche           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ all: $(NAME)
 $(NAME):
 	clang $(FLAGS) -c $(SRC)
 	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 clean:
 	/bin/rm -f $(OBJ)
