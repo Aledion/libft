@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:29:58 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/15 09:18:52 by aroche           ###   ########.fr       */
+/*   Updated: 2016/02/20 13:40:30 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,22 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*ret;
 
+	ret = NULL;
 	if ((s1) && (s2))
 	{
-		i = ft_strlen(s1) + ft_strlen(s2);
-		j = 0;
-		if ((ret = (char *)malloc(sizeof(*ret) * (i + 1))))
-		{
-			i = 0;
-			while (s1[j] != 0)
-				ret[i++] = s1[j++];
-			j = 0;
-			while (s2[j] != 0)
-				ret[i++] = s2[j++];
-			ret[i] = 0;
-			return (ret);
-		}
+		j = ft_strlen(s1) + ft_strlen(s2);
+		i = 0;
+		if (!(ret = malloc(sizeof(char) * (len + 1))))
+			return (NULL);
+		while (*s1)
+			ret[i++] = *s1++;
+		while (*s2)
+			ret[i++] = *s2++;
+		ret[i] = 0;
 	}
-	return (NULL);
+	else if (s1)
+		return (ft_strdup(s1));
+	else if (s2)
+		return (ft_strdup(s2));
+	return (ret);
 }
