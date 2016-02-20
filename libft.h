@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/15 08:27:46 by aroche            #+#    #+#             */
-/*   Updated: 2015/12/16 16:22:42 by aroche           ###   ########.fr       */
+/*   Updated: 2016/02/20 14:55:28 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void				ft_strdel(char **as);
 char				*ft_strdup(char const *s1);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strnew(size_t size);
-char				**ft_strsplit(char const *s, char c);
+char				**ft_strsplit(char *s, char c);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
 

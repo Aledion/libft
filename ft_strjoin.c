@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:29:58 by aroche            #+#    #+#             */
-/*   Updated: 2016/02/20 13:40:30 by aroche           ###   ########.fr       */
+/*   Updated: 2016/02/20 14:52:44 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	{
 		j = ft_strlen(s1) + ft_strlen(s2);
 		i = 0;
-		if (!(ret = malloc(sizeof(char) * (len + 1))))
+		if (!(ret = malloc(sizeof(char) * (j + 1))))
 			return (NULL);
 		while (*s1)
 			ret[i++] = *s1++;

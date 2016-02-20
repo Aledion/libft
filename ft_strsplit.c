@@ -6,7 +6,7 @@
 /*   By: aroche <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 10:31:58 by aroche            #+#    #+#             */
-/*   Updated: 2016/02/20 14:28:29 by aroche           ###   ########.fr       */
+/*   Updated: 2016/02/20 14:55:55 by aroche           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static size_t	ft_len(char *s, char c)
 	return (i);
 }
 
-char			**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char *s, char c)
 {
 	size_t		i;
 	size_t		x;
@@ -53,7 +53,7 @@ char			**ft_strsplit(char const *s, char c)
 	x = 0;
 	if (!s)
 		return (NULL);
-	if (!(tab = (char **)malloc(sizeof(char *) * (ft_wordcount(s, c) + 1))))
+	if (!(ret = (char **)malloc(sizeof(char *) * (ft_wordcount(s, c) + 1))))
 		return (NULL);
 	while (s[++i])
 		if ((s[i] != c) && ((s[i - 1] == c) || (i == 0)))
